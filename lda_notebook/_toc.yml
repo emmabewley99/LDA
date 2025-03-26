@@ -5,3 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: LDA.ipynb
+- file: Electricity time series.ipynb
