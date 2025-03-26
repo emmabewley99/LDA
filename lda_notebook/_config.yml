@@ -23,3 +23,5 @@ sidebar:
 bibtex_bibfiles:
   - references.bib
 
+execute:
+  timeout: 600
