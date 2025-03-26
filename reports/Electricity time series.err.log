@@ -37,8 +37,8 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-['import tensorflow as tf', 'from tensorflow.keras.models import Sequential', 'from tensorflow.keras.layers import LSTM, Dense, Dropout', 'from tensorflow.keras import regularizers', 'from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau']
+['from tensorflow.keras.models import Sequential', 'from tensorflow.keras.layers import LSTM, Dense, Dropout, Input', 'from tensorflow.keras import regularizers', 'from tensorflow.keras.callbacks import EarlyStopping', 'import numpy as np']
 ...
-["model.compile(optimizer='adam', loss='mse')", '', "early_stopping = EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)", '', 'history = model.fit(X_train, y_train, epochs=50, batch_size=64, validation_data=(X_test, y_test), callbacks=[early_stopping])']
+["model.compile(optimizer='adam', loss='mse')", '', "early_stopping = EarlyStopping(monitor='val_loss', patience=20, restore_best_weights=True)", '', 'history = model.fit(X_train, y_train, epochs=50, batch_size=64, validation_data=(X_test, y_test), callbacks=[early_stopping], verbose = 0)']
 -------------------
 
